@@ -22,13 +22,6 @@ This project is a simple tool built with HTML, CSS, and JavaScript to determine 
 - **CSS3:** For styling and a clean layout.
 - **JavaScript (ES6):** For the core logic and functionality.
 
-## How to Run
-
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/YOUR-USERNAME/palindrome-checker.git](https://github.com/YOUR-USERNAME/palindrome-checker.git)
-    ```
-    *(Note: Replace `YOUR-USERNAME` with your actual GitHub username.)*
 
 2.  **Open the file:**
     Simply open the `index.html` file in your web browser. There is no need for a server.
