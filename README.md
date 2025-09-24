@@ -1,5 +1,5 @@
 # Palindrome-Checker
-# Palindrome Checker
+
 
 A simple and elegant web application to check if a word or phrase is a palindrome.
 
