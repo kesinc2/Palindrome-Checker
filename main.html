@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+    <style>
+        /*
+        * { ... } -> Tüm HTML elemanları için geçerli evrensel seçici.
+        * box-sizing: border-box; -> Padding ve border değerlerini elemanın genişliğine dahil eder.
+        */
+        * {
+            box-sizing: border-box;
+        }
+
+        /*
+        * body -> Sayfanın tamamı için stil tanımlaması.
+        * font-family: sans-serif; -> Okunabilir, modern bir yazı tipi ailesi belirler.
+        * display: flex; -> Çocuk elemanları (body içindeki) esnek kutular haline getirir.
+        * justify-content: center; -> Yatay eksende (sola-sağa) elemanları ortalar.
+        * align-items: center; -> Dikey eksende (yukarı-aşağı) elemanları ortalar.
+        * height: 100vh; -> Ekranın tam yüksekliğini kaplamasını sağlar.
+        * margin: 0; -> Sayfanın etrafındaki varsayılan boşluğu kaldırır.
+        * background-color: #f0f0f0; -> Açık gri bir arka plan rengi verir.
+        * text-align: center; -> Sayfa içindeki metni ortalar.
+        */
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #98c6c6;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        /*
+        * .container -> Ana elemanları kapsayan bir kutu oluşturur.
+        * background-color: #fff; -> Beyaz bir arka plan rengi verir.
+        * padding: 40px; -> Elemanın iç boşluğunu artırır.
+        * border-radius: 10px; -> Köşeleri yuvarlatır.
+        * box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); -> Hafif bir gölge efekti ekler.
+        */
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /*
+        * h1, p -> Başlık ve paragraf elemanları için stil.
+        * color: #333; -> Koyu gri bir metin rengi verir.
+        */
+        h1, p {
+            color: #333;
+        }
+
+        /*
+        * input, button -> Giriş kutusu ve düğme için stil.
+        * padding: 12px; -> İç boşlukları ayarlar.
+        * margin: 10px 0; -> Üstten ve alttan boşluk ekler.
+        * border: 1px solid #ccc; -> Gri bir kenarlık verir.
+        * border-radius: 5px; -> Köşeleri yuvarlatır.
+        * width: 250px; -> Genişliği belirler.
+        * font-size: 16px; -> Yazı boyutunu ayarlar.
+        */
+        input, button {
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 250px;
+            font-size: 16px;
+        }
+
+        /*
+        * button -> Düğme için özel stil.
+        * background-color: #007bff; -> Mavi bir arka plan rengi verir.
+        * color: #fff; -> Beyaz metin rengi verir.
+        * border: none; -> Kenarlığı kaldırır.
+        * cursor: pointer; -> Fare imlecini tıklanabilir hale getirir.
+        * transition: background-color 0.3s; -> Fare üzerine gelindiğinde yumuşak bir renk geçişi sağlar.
+        */
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /*
+        * button:hover -> Fare düğme üzerine geldiğinde geçerli olacak stil.
+        * background-color: #0056b3; -> Daha koyu bir mavi tonu verir.
+        */
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Palindrome Checker</h1>
+        <p>
+            <b>Türkçe:</b> Palindrom, tersten okunduğunda da aynı olan kelime, sayı veya ifadedir. Örnek: "ütü", "madam".
+            <br>
+            <b>English:</b> A palindrome is a word, number, or phrase that reads the same backward as it does forward. Example: "level", "radar".
+        </p>
+        <input id="input" type="text" placeholder="Type something...">
+        <button onclick="check()">Check</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
