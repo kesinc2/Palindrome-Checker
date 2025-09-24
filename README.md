@@ -26,4 +26,4 @@ This project is a simple tool built with HTML, CSS, and JavaScript to determine 
 2.  **Open the file:**
     Simply open the `index.html` file in your web browser. There is no need for a server.
 
-## Project Structure
+
